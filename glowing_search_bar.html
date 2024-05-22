@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(5, 1, 33);
+            height: 100vh;
+        }
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .search_box {
+            border: none;
+            border-radius: 5px;
+            padding: 8px;
+            box-shadow: 1px 1px 1px 1px #fff;
+        }
+        .search_bar{
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+        }
+        .search_btn, .search, .cancel{
+            height: 30px;
+            border: none;
+            color: #fff;
+            font-family: 'calibri light';
+            font-weight: bold;
+            background-color: transparent;
+        }
+        .cancel {
+            font-size: 10px;
+            padding-right: 5px;
+            border: none;
+            border-right: 1px solid #fff;
+            cursor: pointer;
+        }
+        .search_btn {
+            cursor: pointer;
+        }
+        .search {
+            outline: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="center">
+    <div class="search_box center">
+        <div class="search_bar">
+            <input type="text" class="search" placeholder="Type here"></div>
+            <div class="cancel center">&cross;</div>
+            <input type="submit" value="Search" class="search_btn">
+        </div>
+    </div>
+</body>
+</html>
